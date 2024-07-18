@@ -29,7 +29,7 @@ input[type="file"], button {
 
 input[type="file"] {
   border-color: transparent;
-  padding: 0;
+  padding: 2 px;
   background-color: transparent;
   color: black;
 }
