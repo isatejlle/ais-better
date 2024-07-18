@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = ["James Escobedo <escobedo.james01@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+cleo = "^2.1.0"
+fastapi = "^0.111.1"
+uvicorn = "^0.30.1"
+pillow = "^10.4.0"
+lightgbm = "^4.4.0"
+joblib = "^1.4.2"
+python-multipart = "^0.0.9"
+
+
+[tool.poetry.group.dev.dependencies]
+poetry-lock-package = "^0.5.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
