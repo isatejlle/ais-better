@@ -1,10 +1,8 @@
 from fastapi import FastAPI, File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
-from fastapi.responses import JSONResponse
 from PIL import Image
 import io
-import lightgbm as lgb
 import numpy as np
 import joblib
 
@@ -45,7 +43,6 @@ async def predict_image(file: UploadFile = File(...)):
         3: 'Very Mildly Demented'
     }
     image = Image.open(io.BytesIO(contents)).convert('L')
-    image.show()
     image_array = preprocess_image(image)
     prediction = predict(image_array).tolist()
     temp = float('-inf')
