@@ -1,0 +1,43 @@
+body, #app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2px;
+  font-family: Arial, sans-serif;
+}
+
+#mainHeader {
+  color: #0051bc;
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+#subHeader {
+  color: black;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input[type="file"], button {
+  margin: 4px 0;
+  padding: 10px 10px;
+  border: 2px solid black;
+  background-color: #0051bc;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="file"] {
+  border-color: transparent;
+  padding: 2 px;
+  background-color: transparent;
+  color: black;
+}
+
+button:hover {
+  background-color: darkblue;
+}
+
+#predictionResult {
+  margin-top: 20px;
+}
