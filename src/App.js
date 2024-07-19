@@ -17,7 +17,7 @@ document.getElementById('predictButton').addEventListener('click', async () => {
   formData.append('file', imageInput.files[0]);
 
   try {
-      const response = await fetch('https://ai-scholars-2024.de.r.appspot.com/predict/', {
+      const response = await fetch('https://cmu-ais-2024.uk.r.appspot.com/predict/', {
           method: 'POST',
           body: formData,
       });
